@@ -4,6 +4,7 @@ resource "aws_security_group" "crypto" {
         Name = "${var.prefix}"
   }
   description = "${var.prefix} SG"
+  vpc_id = "${var.vpc_id}"
   egress {
     from_port   = 0
     to_port     = 65535 # All outbound traffic

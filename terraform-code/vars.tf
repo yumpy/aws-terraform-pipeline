@@ -2,10 +2,10 @@ variable "region" {
   #default = "eu-central-1" # Frankfurt
   #default = "us-east-2" # Ohio
   #default = "us-west-2" #Oregon
-  #default = "ap-southeast-2"
+  default = "ap-southeast-2"
   #default = "us-east-2"
   #default = "eu-west-1"
-  default = "us-east-1" # Virginia
+  # default = "us-east-1" # Virginia
   description = "the region where you want deploy the solution"
 }
 
@@ -16,4 +16,8 @@ variable "prefix" {
 
 variable "profile" {
   default = "default"
+}
+
+variable "vpc_id" {
+  default = "vpc-bf9a6cda"
 }
